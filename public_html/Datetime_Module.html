@@ -1,0 +1,366 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+
+<div id="java-main">
+    <div class="heading"><b>Datetime Module</b> </div>
+    <div class="java-sub-contents">
+        <div class="list">
+            <ul>
+                <li>Python Dates</li></ul>
+            <div class="sub_list">
+                <li>A date in Python is not a data type of its own.</li>
+                <li>Using a module named&nbsp;datetimeto work with dates as date objects.</li>
+            </div>
+            <ul>
+                <li>Example</li></ul>
+            <div class="sub_list">
+                Import the datetime module and display the current date:</p>
+            </div>
+            <div class="program_code">
+                <p>import&nbsp;datetime <br /> x = datetime.datetime.now()<br /> print(x)</p>
+            </div>
+            <ul>
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <p>&nbsp; &nbsp;2020-09-03 20:56:44.859252</p>
+            </div>
+            <ul>
+                <li>The date contains year, month, day, hour, minute, second, and microsecond.</li>
+                <li>The&nbsp;datetimemodule has many methods to return information about the date object.</li>
+                <li>Example</li>
+            </ul>
+            <div class="sub_list">
+                <p>Return the year and name of weekday:</p>
+            </div>
+            <div class="program_code">
+                <p>import&nbsp;datetime <br /> x = datetime.datetime.now() <br /> print(x.year)<br /> print(x.strftime("%A"))</p>
+            </div>
+            <ul><li>Output:</li></ul>
+            <div class="program_code">
+                <p>2020<br /> Thursday</p>
+            </div>
+            <br>
+            <div class="heading_inner">Creating Date Objects</div>
+            <br>
+            <ul>
+                <li>To create a date, we can use the&nbsp;datetime()class (constructor) of the&nbsp;datetimemodule.</li>
+                <li>The&nbsp;datetime()class requires three parameters to create a date: year, month, day.</li>
+                <li>Example</li>
+            </ul>
+            <div class="sub_list">
+                <p>Create a date object:</p>
+            </div>
+            <div class="program_code">
+                <p>import&nbsp;datetime<br />  x = datetime.datetime(2020,&nbsp;5,&nbsp;17) <br /> print(x)</p>
+            </div>
+            <ul>
+                <li>The&nbsp;datetime()class also takes parameters for time and timezone (hour, minute, second, microsecond, tzone), but they are optional (Set default zero).</li>
+            </ul>
+            <ul><li>OUTPUT</li></ul>
+            <div class="program_code">
+                <p><strong>2020-05-17 00:00:00</strong></p>
+            </div>
+            <br>
+            <div class="heading_inner">strftime() Method</div>
+            <br>
+            <ul>
+                <li>The&nbsp;datetimeobject has a method for formatting date objects into readable strings.</li>
+                <li>The method is called&nbsp;strftime(), and takes one parameter,&nbsp;format, to specify the format of the returned string:</li>
+                <li>Example</li>
+            </ul>
+            <ul class="sub_list">Display the name of the month:</ul>
+            <div class="program_code">
+                <p>import&nbsp;datetime<br /> x = datetime.datetime(2018,&nbsp;6,&nbsp;1)<br /> print(x.strftime("%B"))</p>
+            </div>
+            <br>
+            <div class="heading_inner">Datetime parameter format</div>
+            <br>
+            <div class="table-compare"> 
+                <table width="">
+                    <tbody>
+                        <tr>
+                        <td width="">
+                            <p><strong>Directive</strong></p>
+                        </td>
+                        <td width="">
+                            <p><strong>Description</strong></p>
+                        </td>
+                        <td width="">
+                            <p><strong>Example</strong></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%a</p>
+                        </td>
+                        <td width="">
+                            <p>Weekday, short version</p>
+                        </td>
+                        <td width="">
+                            <p>Wed</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%A</p>
+                        </td>
+                        <td width="">
+                            <p>Weekday, full version</p>
+                        </td>
+                        <td width="">
+                            <p>Wednesday</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%w</p>
+                        </td>
+                        <td width="">
+                            <p>Weekday as a number 0-6, 0 is Sunday</p>
+                        </td>
+                        <td width="">
+                            <p>3</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%d</p>
+                        </td>
+                        <td width="">
+                            <p>Day of month 01-31</p>
+                        </td>
+                        <td width="">
+                            <p>31</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%b</p>
+                        </td>
+                        <td width="">
+                            <p>Month name, short version</p>
+                        </td>
+                        <td width="">
+                            <p>Dec</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%B</p>
+                        </td>
+                        <td width="">
+                            <p>Month name, full version</p>
+                        </td>
+                        <td width="">
+                            <p>December</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%m</p>
+                        </td>
+                        <td width="">
+                            <p>Month as a number 01-12</p>
+                        </td>
+                        <td width="">
+                            <p>12</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%y</p>
+                        </td>
+                        <td width="">
+                            <p>Year, short version, without century</p>
+                        </td>
+                        <td width="">
+                            <p>18</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%Y</p>
+                        </td>
+                        <td width="">
+                            <p>Year, full version</p>
+                        </td>
+                        <td width="">
+                            <p>2018</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%H</p>
+                        </td>
+                        <td width="">
+                            <p>Hour 00-23</p>
+                        </td>
+                        <td width="">
+                            <p>17</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%I</p>
+                        </td>
+                        <td width="">
+                            <p>Hour 00-12</p>
+                        </td>
+                        <td width="">
+                            <p>05</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%p</p>
+                        </td>
+                        <td width="">
+                            <p>AM/PM</p>
+                        </td>
+                        <td width="">
+                            <p>PM</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%M</p>
+                        </td>
+                        <td width="">
+                            <p>Minute 00-59</p>
+                        </td>
+                        <td width="">
+                            <p>41</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%S</p>
+                        </td>
+                        <td width="">
+                            <p>Second 00-59</p>
+                        </td>
+                        <td width="">
+                            <p>08</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%f</p>
+                        </td>
+                        <td width="">
+                            <p>Microsecond 000000-999999</p>
+                        </td>
+                        <td width="">
+                            <p>548513</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%z</p>
+                        </td>
+                        <td width="">
+                            <p>UTC offset</p>
+                        </td>
+                        <td width="">
+                            <p>+0100</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%Z</p>
+                        </td>
+                        <td width="">
+                            <p>Timezone</p>
+                        </td>
+                        <td width="">
+                            <p>CST</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%j</p>
+                        </td>
+                        <td width="">
+                            <p>Day number of year 001-366</p>
+                        </td>
+                        <td width="">
+                            <p>365</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%U</p>
+                        </td>
+                        <td width="">
+                            <p>Week number of year, Sunday as the first day of week, 00-53</p>
+                        </td>
+                        <td width="">
+                            <p>52</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%W</p>
+                        </td>
+                        <td width="">
+                            <p>Week number of year, Monday as the first day of week, 00-53</p>
+                        </td>
+                        <td width="">
+                            <p>52</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%c</p>
+                        </td>
+                        <td width="">
+                            <p>Local version of date and time</p>
+                        </td>
+                        <td width="">
+                            <p>Mon Dec 31 17:41:00 2018</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%x</p>
+                        </td>
+                        <td width="">
+                            <p>Local version of date</p>
+                        </td>
+                        <td width="">
+                            <p>12/31/18</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%X</p>
+                        </td>
+                        <td width="">
+                            <p>Local version of time</p>
+                        </td>
+                        <td width="">
+                            <p>17:41:00</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>%%</p>
+                        </td>
+                        <td width="">
+                            <p>A % character</p>
+                        </td>
+                        <td width="">
+                            <p>%</p>
+                        </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,446 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">Python NumPy Module</div><br>
+        <div class="java-sub-contents">
+            <div class="list">
+
+                <div class="heading_inner">Python NumPy Module</div><br>
+                <ul>
+                    <li>NumPy is a python library used for working with arrays.</li>
+                    <li>NumPy was created in 2005 by Travis Oliphant.</li>
+                    <li>It is an open source project and you can use it freely.</li>
+                    <li>NumPy stands for Numerical Python.</li>
+                </ul>
+                <br/>
+                <div class="heading_inner">NumPy Creating Arrays</div><br>
+                <ul>
+                    <li>NumPy is used to work with arrays.</li>
+                    <li>The array object in NumPy is called&nbsp;ndarray.</li>
+                    <li>We can create a NumPy&nbsp;ndarrayobject by using the&nbsp;array()function.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy
+                        arr = numpy.array([1, 2, 3, 4, 5])
+                        print(arr)
+                        print(type(arr))
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                     [1 2 3 4 5] 
+                    <class 'numpy.ndarray'>
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>To create an&nbsp;ndarray, we can pass a list, tuple or any array-like object into the&nbsp;array()method, and it will be converted into an&nbsp;ndarray:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Use a tuple to create a NumPy array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5])
+                        print(arr)
+                        print(type(arr))
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                     [1 2 3 4 5] 
+                    <class 'numpy.ndarray'>
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Dimensions In Arrays</div><br>
+                <ul>
+
+                    <li>0-D arrays, or Scalars, are the elements in an array. Each value in an array is a 0-D array.</li>
+
+                    <p>arr = np.array(42)</p>
+
+                    <li>An array that has 0-D arrays as its elements is called uni-dimensional or 1-D array.</li>
+
+                    <p>arr = np.array([1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5])</p>
+
+                    <li>An array that has 1-D arrays as its elements is called a 2-D array.</li>
+
+                    <p>arr = np.array([[1,&nbsp;2,&nbsp;3], [4,&nbsp;5,&nbsp;6]])</p>
+
+                    <li>An array that has 2-D arrays (matrices) as its elements is called 3-D array.</li>
+
+                    <p>arr = np.array([[[1,&nbsp;2,&nbsp;3], [4,&nbsp;5,&nbsp;6]], [[1,&nbsp;2,&nbsp;3], [4,&nbsp;5,&nbsp;6]]])<p/>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Check how many dimensions the arrays have:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+
+                        a = np.array(42)
+                        b = np.array([1, 2, 3, 4, 5])
+                        c = np.array([[1, 2, 3], [4, 5, 6]])
+                        d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+                        #Check the dimensions
+                        print(a.ndim)
+                        print(b.ndim)
+                        print(c.ndim)
+                        print(d.ndim)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">NumPy Array Indexing & Accessing</div><br>
+                <ul>
+                    <li>Array indexing is the same as accessing an array element.</li>
+                    <li>You can access an array element by referring to its index number.</li>
+                    <li>The indexes in NumPy arrays start with 0, meaning that the first element has index 0, and the second has index 1 etc.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Get the first element from the following array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4])
+                        print(arr[0])
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Access 2-D/3-D Arrays</div><br>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Access the 2nd element on 1st dim:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+                        print('2nd element on 1st dim: ', arr[0, 1])
+                    </pre>
+                </div>
+                <br/>
+                <div class="sub_list">
+                    <li>Access the third element of the second array of the first array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+                        print(arr[0, 1, 2])
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">NumPy Array Slicing</div><br>
+                <ul>
+                    <li>Slicing in python means taking elements from one given index to another given index.</li>
+                    <li>We pass slice instead of index like this:&nbsp;[<em>start</em>:<em>end</em>].</li>
+                    <li>We can also define the step, like this:&nbsp;[<em>start</em>:<em>end</em>:<em>step</em>].</li>
+                    <li>If we don't pass start its considered 0</li>
+                    <li>If we don't pass end its considered length of array in that dimension</li>
+                    <li>If we don't pass step its considered 1</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Slice elements from index 1 to index 5 from the following array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 6, 7])
+                        print(arr[1:5])
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Slice elements from index 4 to the end of the array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 6, 7])
+                        print(arr[4:])
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Slice elements from the beginning to index 4 (not included):</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 6, 7])
+                        print(arr[:4])
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>STEP</li>
+                    <li>Use the&nbsp;stepvalue to determine the step of the slicing:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Return every other element from index 1 to index 5:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 6, 7])
+                        print(arr[1:5:2])
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Return every other element from the entire array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 6, 7])
+                        print(arr[::2])
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Python COPY:</div><br>
+                <ul>
+                    <li>The copy&nbsp;<em>owns</em>the data and any changes made to the copy will not affect original array, and any changes made to the original array will not affect the copy.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Make a copy, change the original array, and display both arrays:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5,])
+                        x = arr.copy()
+                        arr[0] = 42
+                        print(arr)
+                        print(x)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Python VIEW:</div><br>
+                <ul>
+                    <li>The view&nbsp;<em>does not own</em>the data and any changes made to the view will affect the original array, and any changes made to the original array will affect the view.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Make a view, change the original array, and display both arrays:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5,])
+                        x = arr.view()
+                        arr[0] = 42
+                        print(arr)
+                        print(x)
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>Make Changes in the VIEW:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Make a view, change the view, and display both arrays:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5,])
+                        x = arr.view()
+                        x[0] = 31
+                        print(arr)
+                        print(x)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">NumPy Array Iterating</div><br>
+                <ul>
+                    <li>Iterating means going through elements one by one.</li>
+                    <li>As we deal with multi-dimensional arrays in numpy, we can do this using basic&nbsp;forloop of python.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Iterate on the elements of the following 1-D array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3,])
+                        for x in arr:
+                            print(x)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">NumPy Joining Array</div><br>
+                <ul>
+                    <li>Joining means putting contents of two or more arrays in a single array.</li>
+                    <li>We pass a sequence of arrays that we want to join to the&nbsp;concatenate()function, along with the axis.</li>
+                    <li>If axis is not explicitly passed, it is taken as 0.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Join two arrays</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr1 = np.array([1, 2, 3,])
+                        arr2 = np.array([4, 5, 6,])
+                        arr = np.concatenate((arr1, arr2))
+                        print(arr)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">NumPy Splitting Array</div><br>
+                <ul>
+                    <li>Splitting is reverse operation of Joining.</li>
+                    <li>Joining merges multiple arrays into one and Splitting breaks one array into multiple.</li>
+                    <li>We use&nbsp;array_split()for splitting arrays, we pass it the array we want to split and the number of splits.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Split the array in 3 parts:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr1 = np.array([1, 2, 3, 4, 5, 6])
+                        newarr = np.array_split((arr, 3))
+                        print(newarr)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">NumPy Searching Arrays</div><br>
+                <ul>
+                    <li>You can search an array for a certain value, and return the indexes that get a match.</li>
+                    <li>To search an array, use the&nbsp;where()method.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Find the indexes where the value is 4:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 4, 4])
+                        x = np.where(arr == 4)
+                        print(x)
+                    </pre>
+                    <p>NOTE: The example above will return a tuple:&nbsp;(array([3, 5, 6],)</p>
+                    <p>Which means that the value 4 is present at index 3, 5, and 6.</p>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Find the indexes where the values are even:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+                        x = np.where(arr%2 == 0)
+                        print(x)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Find the indexes where the values are odd:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+                        x = np.where(arr%2 == 1)
+                        print(x)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Search Sort</div><br>
+                <ul>
+                    <li>There is a method called&nbsp;searchsorted()which performs a binary search in the array, and returns the index where the specified value would be inserted to maintain the search order.</li>
+                    <li>The&nbsp;searchsorted()&nbsp;method is assumed to be used on sorted arrays.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Find the indexes where the value 7 should be inserted:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([6, 7, 8, 9])
+                        x = np.searchsorted(arr, 7)
+                        print(x)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Search From the Right Side</div><br>
+                <ul>
+                    <<li>By default the left most index is returned, but we can give&nbsp;side='right'to return the right most index instead.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Find the indexes where the value 7 should be inserted, starting from the right:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([6, 7, 8, 9])
+                        x = np.searchsorted(arr, 7, side = 'right')
+                        print(x)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">NumPy Sorting Arrays</div><br>
+                <ul>
+                    <li>Sorting means putting elements in an&nbsp;<em>ordered sequence</em>.</li>
+                    <li><em>Ordered sequence</em>is any sequence that has an order corresponding to elements, like numeric or alphabetical, ascending or descending.</li>
+                    <li>The NumPy ndarray object has a function called&nbsp;sort(), that will sort a specified array.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Sort the array:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array([3, 2, 0, 1])
+                        print(np.sort(arr))
+                    </pre>
+                    <p><strong>Note:</strong>&nbsp;This method returns a copy of the array, leaving the original array unchanged.</p>
+                </div>
+                <br/>
+                <ul>
+                    <li>You can also sort arrays of strings, or any other data type:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Sort the array alphabetically:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        import numpy as np
+                        arr = np.array('banana', 'cherry', 'apple'])
+                        print(np.sort(arr))
+                    </pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</html>

@@ -1,0 +1,423 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">Python Dictionaries</div><br>
+        <div class="java-sub-contents">
+            <div class="list">
+
+                <div class="heading_inner">Dictionary:</div><br>
+                <ul>
+                    <li>A dictionary is a collection which is unordered, changeable and indexed.</li>
+                    <li>In Python dictionaries are written with curly brackets, and they <strong>have keys and values pair</strong>.</li>
+                </ul>
+                <ul class="sub_list">
+                    <li>Example</li>
+                    <li>Create and print a dictionary:</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                print(thisdict)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+               {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+                    </pre>
+                </div>
+                <br>
+                <div class="heading_inner">Add An Items</div><br>
+                <ul class="sub_list">
+                    <li>Adding an item to the dictionary is done by using a new index key and assigning a value to it:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                   thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                thisdict["color"] = "red"
+                print(thisdict)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+                    </pre>
+                </div>
+                <br>
+                <div class="heading_inner">Remove Item</div><br>
+                <ul class="sub_list">
+                    <li>There are several methods to remove items from a dictionary:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>The&nbsp;pop()&nbsp;method removes the item with the specified key name:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                thisdict.pop("modal")
+                print(thisdict)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+               {'brand': 'Ford', 'year': 1964}
+                    </pre>
+                </div>
+                <ul class="sub_list">
+                    <li>The&nbsp;del&nbsp;keyword removes the item with the specified key name :</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                del thisdict["modal"]
+                print(thisdict)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                {'brand': 'Ford', 'year': 1964}
+                    </pre>                
+                </div>
+                <ul class="sub_list">
+                    <li>del keyword can also use to delete complete dictionary</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                del thisdict
+                print(thisdict)  // #an error because "thisdict" not exists.
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Access An Item</div><br>
+                <ul class="sub_list">
+                    <li>You can access the items of a dictionary by referring to its key name, inside square brackets:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Get the value of the "model" key:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                x = thisdict["modal"]
+                print(x)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+               Mustang
+                    </pre>
+                </div>
+                <ul class="sub_list">
+                    <li>There is also a method called&nbsp;get()that will give you the same result:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Get the value of the "model" key:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                x = thisdict.get("modal")
+                print(x)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+               Mustang
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Change Item Value</div><br>
+                <ul class="sub_list">
+                    <li>You can change the value of a specific item by referring to its key name:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Change the "year" to 2018:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                thisdict["year"] = 2018
+                print(thisdict)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+               {'brand': 'Ford', 'model': 'Mustang', 'year': 2018}
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Iteration Over Dictionary</div><br>
+                <ul class="sub_list">
+                    <li>You can loop through a dictionary by using a&nbsp;forloop.</li>
+                    <li>When looping through a dictionary, the return value are the&nbsp;<em>keys</em>of the dictionary, but there are methods to return the&nbsp;<em>values</em>as well.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Print all key names in the dictionary, one by one:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                for x in thisdict:
+                print(x)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                brand
+                model
+                year
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Print all&nbsp;<em>values</em>in the dictionary, one by one:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                for x in thisdict:
+                print(thisdict[x])
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                Ford
+                Mustang
+                1964
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>You can also use the&nbsp;values()method to return values of a dictionary:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                for x in thisdict.valus():
+                print(x)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                Ford
+                Mustang
+                1964
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Loop through both&nbsp;<em>keys</em>and&nbsp;<em>values</em>, by using the&nbsp;items()method:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                for x,y in thisdict.item():
+                print(x,y)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                brand Ford
+                model Mustang
+                year 1964
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Check If Key Exists</div><br>
+                <ul class="sub_list">
+                    <li>To determine if a specified key is present in a dictionary use the&nbsp;inkeyword:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Check if "model" is present in the dictionary:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                if "model" in thisdict:
+                print("Yes, 'model' is one of the keys")
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                Yes, 'model' is one of the keys
+                    </pre>
+                </div> 
+                <br/>
+                <div class="heading_inner">Length Of Dictionary</div><br>
+                <ul class="sub_list">
+                    <li>To determine how many items (key-value pairs) a dictionary has, use the&nbsp;len()function.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Print the number of items in the dictionary:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                print(len(thisdict))
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                3
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Copy Dictionary</div><br>
+                <ul class="sub_list">
+                    <li>You cannot copy a dictionary simply by typing&nbsp;</li>
+                    <li>dict2 = dict1</li>
+                    <li>because:&nbsp;dict2will only be a&nbsp;<em>reference</em>to&nbsp;dict1, and changes made in&nbsp;dict1&nbsp;will automatically also be made in&nbsp;dict2.</li>
+                    <li>There are ways to make a copy, one way is to use the built-in Dictionary method&nbsp;copy().</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Make a copy of a dictionary with the&nbsp;copy()method:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                mydict = thisdict.copy()
+                print(mydict)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+                    </pre>
+                </div> 
+                <ul class="sub_list">
+                    <li>Another way to make a copy is to use the built-in function&nbsp;dict().</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Make a copy of a dictionary with the&nbsp;dict()function:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                thisdict = {
+                       "brand": "Ford",
+                       "model": "Mustang",
+                       "year": 1964
+                    }
+                mydict = dict(thisdict)
+                print(mydict)
+                    </pre>
+                </div>
+                <div class="sub_list">
+                    <li>Output</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+                    </pre>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</html>

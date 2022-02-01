@@ -1,0 +1,267 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+<div id="java-main">
+
+    <div class="heading">String in Python</div><br>
+    <div class="java-sub-contents">
+        <div class="list">
+           
+         <div class="heading_inner">String in Python</div><br>
+            <ul>
+                <li>In python, single character and multiple characters are all treated as strings.</li>
+                <li>Strings are surrounded by either single quotation marks, or double quotation marks.</li>
+            </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>'hello' is the same as "hello".</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                  print("Hello")
+                  print('Hello')
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                  Hello
+                  Hello
+                </pre>
+            </div>
+            <div class="program_code">
+                <pre>
+                  print(type('Hello'))
+                  print(type("Hello"))
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                  str
+                  str
+                </pre>
+            </div>
+            <ul>
+                <li><b>Multiline Strings</b></li>
+            </ul>
+            <ul class="sub_list">
+                <li>You can assign a multiline string to a variable by using three quotes:</li>
+                <li>Example</li>
+                <li>You can use three double quotes:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                a = """ You can assign a multiline 
+		string to a variable by using
+		three quotes """ 
+                print(a)
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                 You can assign a multiline
+                 string to a variable by using
+                 three quotes
+                </pre>
+            </div>
+            <ul>
+                <li><b>String Indexing</b></li>
+            </ul>
+            <ul class="sub_list">
+                <li>String Indexing work same as array Indexing to set of chars.</li>
+                <li>Example</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                a = "Hello, World!" print(a[1])
+                print(a[3])
+                print(a[9])
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                 e
+                 l
+                 r
+                </pre>
+            </div>
+            <ul>
+                <li><b>String Slicing:</b></li>
+            </ul>
+            <ul class="list">
+                <li>You can return a range of characters by using the string slicing.</li>
+                <li>Specify the start index and the end index, separated by a colon(:), to return a part of the string.</li>
+            </ul>
+            <ul>
+                <li>Example</li>
+            </ul>
+            <ul class="sub_list">
+                <li>Get the characters from position 2 to position 5 (not included):</li>
+            </ul>
+
+            <div class="program_code">
+                <pre>
+               b = "Hello, World!"
+               print(b[2:5]))
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                 llo
+                </pre>
+            </div>
+            <ul>
+                <li><b>String Length:</b></li>
+            </ul>
+            <ul class="list">
+                <li>To get the length of a string, use the len() function.</li>                
+                <li>Example</li>
+                <li>The len() function returns the length of a string:</li>
+            </ul>
+
+            <div class="program_code">
+                <pre>
+               b = "Hello, World!"
+               print(len(a))
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                 13
+                </pre>
+            </div>
+            <br>
+            <div class="heading_inner">Escape Character</div><br>
+            <ul>
+                <li>To insert characters that are illegal in a string, use an escape character.</li>
+                <li>An escape character is a backslash <b>\</b> followed by the character you want to insert.</li>
+                <li>An example of an illegal character is a double quote inside a string that is surrounded by double quotes:</li>
+            </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>You will get an error if you use double quotes inside a string that is surrounded by double quotes:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                  txt = "We are the so-called "Vikings" from the north."
+                </pre>
+            </div>
+            <ul>
+                <li>To fix this problem, use the escape character <b>"\"</b>:</li>
+            </ul>     
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>The escape character allows you to use double quotes when you normally would not be allowed:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                  txt = "We are the so-called \"Vikings\" from the north."
+                </pre>
+            </div>
+            <ul>
+                <li>Other escape characters used in Python:</li>
+            </ul>
+            <div class="table-compare">
+                <table width="">
+                    <tbody>
+                        <tr>
+                        <td width="">
+                            <p>Code</p>
+                        </td>
+                        <td width="">
+                            <p>Result</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\'</p>
+                        </td>
+                        <td width="">
+                            <p>Single Quote</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\\</p>
+                        </td>
+                        <td width="">
+                            <p>Backslash</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\n</p>
+                        </td>
+                        <td width="">
+                            <p>New Line</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\r</p>
+                        </td>
+                        <td width="">
+                            <p>Carriage Return</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\t</p>
+                        </td>
+                        <td width="">
+                            <p>Tab</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\b</p>
+                        </td>
+                        <td width="">
+                            <p>Backspace</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\f</p>
+                        </td>
+                        <td width="">
+                            <p>Form Feed</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\ooo</p>
+                        </td>
+                        <td width="">
+                            <p>Octal value</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width="">
+                            <p>\xhh</p>
+                        </td>
+                        <td width="">
+                            <p>Hex value</p>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+    </body>
+</html>

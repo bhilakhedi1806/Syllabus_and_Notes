@@ -1,0 +1,746 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">Python Tkinter Label</div><br>
+        <div class="java-sub-contents">
+            <div class="list">
+                <div class="heading_inner">Python Tkinter Label</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>The Entry widget is used to provide the single line text-box to the user to accept a value from the user.</li>
+                        <li>We can use the Entry widget to accept the text strings from the user.</li>
+                        <li>It can only be used for one line of text from the user.</li>
+                        <li>For multiple lines of text, we must use the text widget.</li>
+                        <li>Syntax</li>
+                    </ul>
+                    <p>w&nbsp;=&nbsp;Entry&nbsp;(parent,&nbsp;options)</p>
+                </div>
+                <ul>
+                    <li>A list of possible options is given below.</li>
+                </ul>
+                <div class="table-compare">
+                    <table width="">
+                        <tbody>
+                            <tr>
+                            <td width="">
+                                <p>SN</p>
+                            </td>
+                            <td width="">
+                                <p>Option</p>
+                            </td>
+                            <td width="">
+                                <p>Description</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>1</p>
+                            </td>
+                            <td width="">
+                                <p>anchor</p>
+                            </td>
+                            <td width="">
+                                <p>It specifies the exact position of the text within the size provided to the widget. The default value is CENTER, which is used to center the text within the specified space.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>2</p>
+                            </td>
+                            <td width="">
+                                <p>bg</p>
+                            </td>
+                            <td width="">
+                                <p>The background color displayed behind the widget.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>3</p>
+                            </td>
+                            <td width="">
+                                <p>bitmap</p>
+                            </td>
+                            <td width="">
+                                <p>It is used to set the bitmap to the graphical object specified so that, the label can represent the graphics instead of text.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>4</p>
+                            </td>
+                            <td width="">
+                                <p>bd</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the width of the border. The default is 2 pixels.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>5</p>
+                            </td>
+                            <td width="">
+                                <p>cursor</p>
+                            </td>
+                            <td width="">
+                                <p>The mouse pointer will be changed to the type of the cursor specified, i.e., arrow, dot, etc.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>6</p>
+                            </td>
+                            <td width="">
+                                <p>font</p>
+                            </td>
+                            <td width="">
+                                <p>The font type of the text written inside the widget.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>7</p>
+                            </td>
+                            <td width="">
+                                <p>fg</p>
+                            </td>
+                            <td width="">
+                                <p>The foreground color of the text written inside the widget.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>8</p>
+                            </td>
+                            <td width="">
+                                <p>height</p>
+                            </td>
+                            <td width="">
+                                <p>The height of the widget.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>9</p>
+                            </td>
+                            <td width="">
+                                <p>image</p>
+                            </td>
+                            <td width="">
+                                <p>The image that is to be shown as the label.</p>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td width="">
+                                <p>10</p>
+                            </td>
+                            <td width="">
+                                <p>justify</p>
+                            </td>
+                            <td width="">
+                                <p>It is used to represent the orientation of the text if the text contains multiple lines. It can be set to LEFT for left justification, RIGHT for right justification, and CENTER for center justification.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>11</p>
+                            </td>
+                            <td width="">
+                                <p>padx</p>
+                            </td>
+                            <td width="">
+                                <p>The horizontal padding of the text. The default value is 1.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p></p>
+                            </td>
+                            <td width="">
+                                <p>pady</p>
+                            </td>
+                            <td width="">
+                                <p>The vertical padding of the text. The default value is 1.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>13</p>
+                            </td>
+                            <td width="">
+                                <p>relief</p>
+                            </td>
+                            <td width="">
+                                <p>The type of the border. The default value is FLAT.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>14</p>
+                            </td>
+                            <td width="">
+                                <p>text</p>
+                            </td>
+                            <td width="">
+                                <p>This is set to the string variable which may contain one or more line of text.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>15</p>
+                            </td>
+                            <td width="">
+                                <p>textvariable</p>
+                            </td>
+                            <td width="">
+                                <p>The text written inside the widget is set to the control variable StringVar so that it can be accessed and changed accordingly.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>16</p>
+                            </td>
+                            <td width="">
+                                <p>underline</p>
+                            </td>
+                            <td width="">
+                                <p>We can display a line under the specified letter of the text. Set this option to the number of the letter under which the line will be displayed.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>17</p>
+                            </td>
+                            <td width="">
+                                <p>width</p>
+                            </td>
+                            <td width="">
+                                <p>The width of the widget. It is specified as the number of characters.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>18</p>
+                            </td>
+                            <td width="">
+                                <p>wraplength</p>
+                            </td>
+                            <td width="">
+                                <p>Instead of having only one line as the label text, we can break it to the number of lines where each line has the number of characters specified to this option.</p>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    from tkinter import *
+                    top = Tk()
+                    top.geometry("400x250")
+                    #creating label
+                    uname = Label(top, text = "Username").place(x = 30,y = 50)
+                    #creating label
+                    password = Label(top, text = "Password").place(x = 30, y = 90)
+                    sbmitbtn = Button(top, text = "Submit",activebackground = "pink", activeforeground = "blue").place(x = 30, y = 120)
+                    top.mainloop()
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Python Tkinter Entry</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>The Label is used to specify the container box where we can place the text or images.</li>
+                        <li>This widget is used to provide the message to the user about other widgets used in the python application.</li>
+                        <li>There are the various options which can be specified to configure the text or the part of the text shown in the Label.</li>
+                        <li>Syntax</li>
+                        <p>w&nbsp;=&nbsp;Label&nbsp;(master,&nbsp;options)&nbsp;&nbsp;</p>
+                    </ul>
+                </div>
+                <div class="table-compare">
+                    <table width="">
+                        <tbody>
+                            <tr>
+                            <td width="">
+                                <p>SN</p>
+                            </td>
+                            <td width="">
+                                <p>Option</p>
+                            </td>
+                            <td width="">
+                                <p>Description</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>1</p>
+                            </td>
+                            <td width="">
+                                <p>bg</p>
+                            </td>
+                            <td width="">
+                                <p>The background color of the widget.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>2</p>
+                            </td>
+                            <td width="">
+                                <p>bd</p>
+                            </td>
+                            <td width="">
+                                <p>The border width of the widget in pixels.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>3</p>
+                            </td>
+                            <td width="">
+                                <p>cursor</p>
+                            </td>
+                            <td width="">
+                                <p>The mouse pointer will be changed to the cursor type set to the arrow, dot, etc.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>4</p>
+                            </td>
+                            <td width="">
+                                <p>exportselection</p>
+                            </td>
+                            <td width="">
+                                <p>The text written inside the entry box will be automatically copied to the clipboard by default. We can set the exportselection to 0 to not copy this.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>5</p>
+                            </td>
+                            <td width="">
+                                <p>fg</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the color of the text.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>6</p>
+                            </td>
+                            <td width="">
+                                <p>font</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the font type of the text.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>7</p>
+                            </td>
+                            <td width="">
+                                <p>highlightbackground</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the color to display in the traversal highlight region when the widget does not have the input focus.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>8</p>
+                            </td>
+                            <td width="">
+                                <p>highlightcolor</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the color to use for the traversal highlight rectangle that is drawn around the widget when it has the input focus.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>9</p>
+                            </td>
+                            <td width="">
+                                <p>highlightthickness</p>
+                            </td>
+                            <td width="">
+                                <p>It represents a non-negative value indicating the width of the highlight rectangle to draw around the outside of the widget when it has the input focus.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>10</p>
+                            </td>
+                            <td width="">
+                                <p>insertbackground</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the color to use as background in the area covered by the insertion cursor. This color will normally override either the normal background for the widget.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>11</p>
+                            </td>
+                            <td width="">
+                                <p>insertborderwidth</p>
+                            </td>
+                            <td width="">
+                                <p>It represents a non-negative value indicating the width of the 3-D border to draw around the insertion cursor. The value may have any of the forms acceptable to Tk_GetPixels.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>12</p>
+                            </td>
+                            <td width="">
+                                <p>insertofftime</p>
+                            </td>
+                            <td width="">
+                                <p>It represents a non-negative integer value indicating the number of milliseconds the insertion cursor should remain "off" in each blink cycle. If this option is zero, then the cursor doesn't blink: it is on all the time.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>13</p>
+                            </td>
+                            <td width="">
+                                <p>insertontime</p>
+                            </td>
+                            <td width="">
+                                <p>Specifies a non-negative integer value indicating the number of milliseconds the insertion cursor should remain "on" in each blink cycle.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>14</p>
+                            </td>
+                            <td width="">
+                                <p>insertwidth</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the value indicating the total width of the insertion cursor. The value may have any of the forms acceptable to Tk_GetPixels.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>15</p>
+                            </td>
+                            <td width="">
+                                <p>justify</p>
+                            </td>
+                            <td width="">
+                                <p>It specifies how the text is organized if the text contains multiple lines.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>16</p>
+                            </td>
+                            <td width="">
+                                <p>relief</p>
+                            </td>
+                            <td width="">
+                                <p>It specifies the type of the border. Its default value is FLAT.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>17</p>
+                            </td>
+                            <td width="">
+                                <p>selectbackground</p>
+                            </td>
+                            <td width="">
+                                <p>The background color of the selected text.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>18</p>
+                            </td>
+                            <td width="">
+                                <p>selectborderwidth</p>
+                            </td>
+                            <td width="">
+                                <p>The width of the border to display around the selected task.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>19</p>
+                            </td>
+                            <td width="">
+                                <p>selectforeground</p>
+                            </td>
+                            <td width="">
+                                <p>The font color of the selected task.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>20</p>
+                            </td>
+                            <td width="">
+                                <p>show</p>
+                            </td>
+                            <td width="">
+                                <p>It is used to show the entry text of some other type instead of the string. For example, the password is typed using stars (*).</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>21</p>
+                            </td>
+                            <td width="">
+                                <p>textvariable</p>
+                            </td>
+                            <td width="">
+                                <p>It is set to the instance of the StringVar to retrieve the text from the entry.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>22</p>
+                            </td>
+                            <td width="">
+                                <p>width</p>
+                            </td>
+                            <td width="">
+                                <p>The width of the displayed text or image.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>23</p>
+                            </td>
+                            <td width="">
+                                <p>xscrollcommand</p>
+                            </td>
+                            <td width="">
+                                <p>The entry widget can be linked to the horizontal scrollbar if we want the user to enter more text then the actual width of the widget.</p>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    <strong>from</strong>&nbsp;tkinter&nbsp;<strong>import</strong>&nbsp;*&nbsp;&nbsp;
+                    top&nbsp;=&nbsp;Tk()&nbsp;&nbsp;
+                    top.geometry("400x250")&nbsp;&nbsp;
+                    name&nbsp;=&nbsp;Label(top,&nbsp;text&nbsp;=&nbsp;"Name").place(x&nbsp;=&nbsp;30,y&nbsp;=&nbsp;50)&nbsp;&nbsp;
+                    email&nbsp;=&nbsp;Label(top,&nbsp;text&nbsp;=&nbsp;"Email").place(x&nbsp;=&nbsp;30,&nbsp;y&nbsp;=&nbsp;90)&nbsp;&nbsp;
+                    password&nbsp;=&nbsp;Label(top,&nbsp;text&nbsp;=&nbsp;"Password").place(x&nbsp;=&nbsp;30,&nbsp;y&nbsp;=&nbsp;130)&nbsp;&nbsp;
+                    sbmitbtn&nbsp;=&nbsp;Button(top,&nbsp;text&nbsp;=&nbsp;"Submit",activebackground&nbsp;=&nbsp;"pink",&nbsp;activeforeground&nbsp;=&nbsp;"blue").place(x&nbsp;=&nbsp;30,&nbsp;y&nbsp;=&nbsp;170)&nbsp;&nbsp;
+                    e1&nbsp;=&nbsp;Entry(top).place(x&nbsp;=&nbsp;80,&nbsp;y&nbsp;=&nbsp;50)&nbsp;&nbsp;
+                    &nbsp;e2&nbsp;=&nbsp;Entry(top).place(x&nbsp;=&nbsp;80,&nbsp;y&nbsp;=&nbsp;90)&nbsp;&nbsp;
+                    &nbsp;e3&nbsp;=&nbsp;Entry(top).place(x&nbsp;=&nbsp;95,&nbsp;y&nbsp;=&nbsp;130)&nbsp;&nbsp;
+                    top.mainloop()&nbsp;&nbsp;
+                    </pre>
+                </div>
+                <br/>
+                <div class="image_features">
+                    <img src="C:/Users/lenovo/Desktop/New folder (3)/Python/public_html/img/simple_lavel.png" alt="Simple lavel">
+                </div>
+                <br/>
+                <div class="heading_inner">Python Tkinter Text</div><br>    
+                <div class="list">
+                    <ul>    
+                        <li>The Text widget is used to show the text data on the Python application.</li>
+                        <li>However, Tkinter provides us the Entry widget which is used to implement the single line text box.</li>
+                        <li>The Text widget is used to display the multi-line formatted text with various styles and attributes.</li>
+                        <li>The Text widget is mostly used to provide the text editor to the user.</li>
+                        <li>Syntax</li>
+                    </ul>
+                    <p>&nbsp; w&nbsp;=&nbsp;Text(top,&nbsp;options)</p>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    <strong>from</strong>&nbsp;tkinter&nbsp;<strong>import</strong>&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;
+                    top&nbsp;=&nbsp;Tk()&nbsp;&nbsp;
+                    text&nbsp;=&nbsp;Text(top)&nbsp;&nbsp;
+                    text.insert(INSERT,&nbsp;"Name.....")&nbsp;&nbsp;
+                    text.insert(END,&nbsp;"Salary.....")&nbsp;&nbsp;
+                    text.pack()&nbsp;&nbsp;&nbsp;&nbsp;
+                    top.mainloop()
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Python Tkinter Frame</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>Python Tkinter Frame widget is used to organize the group of widgets.</li>
+                        <li>It acts like a container which can be used to hold the other widgets.</li>
+                        <li>The rectangular areas of the screen are used to organize the widgets to the python application.</li>
+                        <li>Syntax</li>
+                    </ul>
+                    <p>&nbsp; w&nbsp;=&nbsp;Frame(parent,&nbsp;&nbsp;options)</p>
+                </div>
+                <div class="table-compare">
+                    <table width="">
+                        <tbody>
+                            <tr>
+                            <td width="">
+                                <p>SN</p>
+                            </td>
+                            <td width="">
+                                <p>Option</p>
+                            </td>
+                            <td width="">
+                                <p>Description</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>1</p>
+                            </td>
+                            <td width="">
+                                <p>bd</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the border width.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>2</p>
+                            </td>
+                            <td width="">
+                                <p>bg</p>
+                            </td>
+                            <td width="">
+                                <p>The background color of the widget.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>3</p>
+                            </td>
+                            <td width="">
+                                <p>cursor</p>
+                            </td>
+                            <td width="">
+                                <p>The mouse pointer is changed to the cursor type set to different values like an arrow, dot, etc.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>4</p>
+                            </td>
+                            <td width="">
+                                <p>height</p>
+                            </td>
+                            <td width="">
+                                <p>The height of the frame.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>5</p>
+                            </td>
+                            <td width="">
+                                <p>highlightbackground</p>
+                            </td>
+                            <td width="">
+                                <p>The color of the background color when it is under focus.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>6</p>
+                            </td>
+                            <td width="">
+                                <p>highlightcolor</p>
+                            </td>
+                            <td width="">
+                                <p>The text color when the widget is under focus.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>7</p>
+                            </td>
+                            <td width="">
+                                <p>highlightthickness</p>
+                            </td>
+                            <td width="">
+                                <p>It specifies the thickness around the border when the widget is under the focus.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>8</p>
+                            </td>
+                            <td width="">
+                                <p>relief</p>
+                            </td>
+                            <td width="">
+                                <p>It specifies the type of the border. The default value if FLAT.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>9</p>
+                            </td>
+                            <td width="">
+                                <p>width</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the width of the widget.</p>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                   <pre>
+                   <strong>from</strong>&nbsp;tkinter&nbsp;<strong>import</strong>&nbsp;*&nbsp;
+                   top&nbsp;=&nbsp;Tk()&nbsp;&nbsp;
+                   top.geometry("140x100")&nbsp;&nbsp;
+                   frame&nbsp;=&nbsp;Frame(top)&nbsp;&nbsp;
+                   frame.pack()&nbsp;&nbsp;
+                   leftframe&nbsp;=&nbsp;Frame(top)&nbsp;&nbsp;
+                   leftframe.pack(side&nbsp;=&nbsp;LEFT)&nbsp;&nbsp;
+                   rightframe&nbsp;=&nbsp;Frame(top)&nbsp;&nbsp;
+                   rightframe.pack(side&nbsp;=&nbsp;RIGHT)&nbsp;&nbsp;
+                   btn1&nbsp;=&nbsp;Button(frame,&nbsp;text="Submit",&nbsp;fg="red",activebackground&nbsp;=&nbsp;"red")&nbsp;&nbsp;
+                   btn1.pack(side&nbsp;=&nbsp;LEFT)&nbsp;&nbsp;
+                   btn2&nbsp;=&nbsp;Button(frame,&nbsp;text="Remove",&nbsp;fg="brown",&nbsp;activebackground&nbsp;=&nbsp;"brown")&nbsp;&nbsp;
+                   btn2.pack(side&nbsp;=&nbsp;RIGHT)&nbsp;&nbsp;
+                   btn3&nbsp;=&nbsp;Button(rightframe,&nbsp;text="Add",&nbsp;fg="blue",&nbsp;activebackground&nbsp;=&nbsp;"blue")&nbsp;&nbsp;
+                   btn3.pack(side&nbsp;=&nbsp;LEFT)&nbsp;&nbsp;
+                   btn4&nbsp;=&nbsp;Button(leftframe,&nbsp;text="Modify",&nbsp;fg="black",&nbsp;activebackground&nbsp;=&nbsp;"white")&nbsp;&nbsp;
+                   btn4.pack(side&nbsp;=&nbsp;RIGHT)&nbsp;&nbsp;
+                   top.mainloop()
+                   </pre>
+                </div>
+                <br/>
+                <div class="image_features">
+                    <img src="C:/Users/lenovo/Desktop/New folder (3)/Python/public_html/img/simple_frame.png" alt="Simple frame">
+                </div>
+                <br/>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</html>

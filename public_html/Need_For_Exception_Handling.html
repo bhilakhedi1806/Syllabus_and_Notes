@@ -1,0 +1,144 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">Need For Exception Handling</div><br>
+        <div class="java-sub-contents">
+            <div class="list">
+
+                <div class="heading_inner">Need For Exception Handling</div><br>
+                <ul>
+                    <li>Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it.</li>
+                    <li>Errors detected during execution are called&nbsp;<em>exceptions.</em></li>
+                    <li>Most exceptions are not handled by programs, however, and result in error messages as shown here:</li>
+                </ul>
+                <ul class="sub_list">
+                    <li>Like</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                    a=10
+                    b=0
+                    print(a/b)
+
+                    </pre>
+                    <li>ZeroDivisionError: division by zero</li>
+                </div>
+                <br>
+                <div class="heading_inner">Try, Except And Finally Statement</div><br>
+                <ul>
+                    <li>The&nbsp;tryblock lets you test a block of code for errors.</li>
+                    <li>The&nbsp;exceptblock lets you handle the error.</li>
+                    <li>The&nbsp;finallyblock lets you execute code, regardless of the result of the try- and except blocks.</li>
+                </ul>
+                <br>
+                <div class="heading_inner">Exception Handling</div><br>
+                <ul>
+                    <li>When an error occurs, or exception as we call it, Python will normally stop and generate an error message.</li>
+                    <li>These exceptions can be handled using the&nbsp;trystatement:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>The&nbsp;tryblock will generate an exception, because&nbsp;xis not defined:</li>
+                </div>
+                 <div class="program_code">
+                    <pre>
+                    try:
+                        print(x)
+                    except:
+                        print("An exception occurred")
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>Since the try block raises an error, the except block will be executed.</li>
+                    <li>Without the try block, the program will crash and raise an error:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>This statement will raise an error, because&nbsp;xis not defined:</li>
+                </div>
+                 <div class="program_code">
+                    <pre>
+                    print(x)
+                    </pre>
+                </div>
+                <br>
+                <div class="heading_inner">Many Exceptions</div><br>
+                <ul>
+                   <li>You can define as many exception blocks as you want, e.g. if you want to execute a special block of code for a special kind of error:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Print one message if the try block raises a&nbsp;NameErrorand another for other errors:</li>
+                </div>
+                 <div class="program_code">
+                    <pre>
+                    try:
+                        print(x)
+                    except NameError:
+                        print("Variable x is not defined")
+                    except:
+                        print("Something else went wrong")
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Else</div><br>
+                <ul>
+                   <li>You can use the&nbsp;elsekeyword to define a block of code to be executed if no errors were raised:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>In this example, the&nbsp;tryblock does not generate any error:</li>
+                </div>
+                 <div class="program_code">
+                    <pre>
+                    try:
+                        print(x)
+                    except:
+                        print("Variable x is not defined")
+                    else:
+                        print("Something else went wrong")
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Finally</div><br>
+                <ul>
+                   <li>The&nbsp;finallyblock, if specified, will be executed regardless if the try block raises an error or not.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                 <div class="program_code">
+                    <pre>
+                    try:
+                        print(x)
+                    except:
+                        print("Something went wrong")
+                    finally:
+                        print("The 'try except' is finished")
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Raise An Exception</div><br>
+                <ul>
+                    <li>As a Python developer you can choose to throw an exception if a condition occurs.</li>
+                    <li>To throw (or raise) an exception, use the&nbsp;raisekeyword.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Raise an error and stop the program if x is lower than 0:</li>
+                </div>
+                 <div class="program_code">
+                    <pre>
+                    x = -1
+                    
+                    if x < 0:
+                    raise Exception("Sorry, no numbers below zero")
+                    </pre>
+                </div>
+                         
+            </div>
+        </div>
+    </div>
+</html>

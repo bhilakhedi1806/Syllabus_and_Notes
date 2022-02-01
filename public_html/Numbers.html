@@ -1,0 +1,151 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<div id=java-main">
+    <div class="heading">Numbers</div>
+    <div class="java-sub-contents">
+        <div class="heading_inner">Numbers</div>
+
+        <div class="list">
+            <ul>
+                <li>Number stores numeric values.</li>
+                <li>The integer, float, and complex values belong to a Python Numbers data-type.</li>
+                <li>Python provides the type() function to know the data-type of the variable.</li>
+                <li>Similarly, the isinstance() function is used to check an object belongs to a particular class.</li>
+                <li>Python creates Number objects when a number is assigned to a variable.</li>
+            </ul>
+        </div> 
+        <ul>
+            <li>Example :-</li>
+        </ul>
+        <div class="program_code">
+            <pre>
+           a = 5
+           print("The type of a", type(a))
+           b = 40.5
+           c = 1+3j
+           print("The type of c", type(c))
+           print(" c is a complex number", isinstance(1+3j,complex))
+            </pre></div>
+
+        <li> Output: </li>
+        <div class="program_code"> <pre>
+                The type of a < class 'int; >
+                The type of b < class 'float' >
+                The type of c < class 'complex' >
+                c is complex number: True
+            </pre>
+        </div>
+        <div class="list">
+            <ul>
+                <li>Python supports three types of numeric data</li>
+            </ul>
+            <ol>
+                <li>Int - </li>
+                <ul class="sub_list">
+                    <li>Integer value can be any length such as integers 10, 2, 29, -20, -150 etc.</li>
+                    <li>Python has no restriction on the length of an integer.</li>
+                    <li>Its value belongs to&nbsp;<strong>int</strong></li>
+                </ul>               
+                <li>Float - </li>
+                <ul class="sub_list">
+                    <li>&nbsp;Float is used to store floating-point numbers like 1.9, 9.902, 15.2, etc.</li>
+                    <li>   It is accurate upto 15 decimal points.</li>
+                </ul>  
+
+                <li>complex - </li>
+                <ul class="sub_list" >
+                    <li>A complex number contains an ordered pair, i.e., x + iy where x and y denote the real and imaginary parts, respectively.</li>
+                    <li>The complex numbers like 2.14j, 2.0 + 2.3j, etc.</li>
+                </ul>
+
+        </div>
+        <div class="heading_inner">Sequence Type</div>
+
+        <div class="list"><ul>
+                <li>The string can be defined as the sequence of characters represented in the quotation marks.</li>
+                <li>In Python, we can use single, double, or triple quotes to define a string.</li>
+                <li>In the case of string handling, the operator + is used to concatenate two strings as the operation "hello"+"python" returns "hello python".</li>
+                <li>The operator * is known as a repetition operator as the operation "Python" *2 returns 'Python Python'.</li>
+                <li>The following example illustrates the string in Python.</li>
+            </ul>
+            <ul>      
+                <li>Example :-</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                  str = "string using double quotes"
+           print(str)
+           s = '''''A multiline
+           string'''
+           print(s)
+                </pre>
+            </div>
+            <li>Output:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+              string using double quotes
+                A multiline
+                string
+                </pre>
+            </div>
+
+            <div><ul> Others </ul></div>
+            <div class="list"> <ul>
+                    <li>List : is a collection which is ordered and changeable. Allows duplicate members.</li>
+                    <li>Tuple : is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+                    <li>Set : is a collection which is unordered and unindexed. No duplicate members.</li>
+                    <li>Dictionary : is a collection which is unordered, changeable and indexed. No duplicate members.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="heading_inner">  Type Conversion</div>
+        <div class="list"> <ul>
+                <li>You can convert from one type to another with the int(),float(),and complex() methods:</li>
+            </ul>
+        </div>
+        <ul> 
+            <li> Example :- </li>
+        </ul>
+        <div class="program_code">
+
+            <pre>
+                x = 1 #int
+                y = 2.8 # float
+                z = 1j # complex
+                #convert from int to float:
+                a = float(x)
+                #convert from float to int:
+                b = int(y)
+                #convert from int to complex:
+                c = complex(x)
+            </pre>
+        </div>
+        <ul>
+            <li> Output :-</li>
+        </ul>   
+        <div class="program_code">
+            <pre>
+             print(a)
+                print(b)
+                print(c)
+                print(type(a))
+                print(type(b))
+                print(type(c))
+            </pre>
+        </div>
+        <div class="heading_inner">User Input</div>
+        <div class="list"> <ul>
+                <li>Python allows for user input.</li>
+                <li>Python 3.6 uses the input() method.</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                    username = input("Enter username:")
+                    print("Username is: " + username)
+                </pre>
+            </div>
+        </div>
+    </div>
+
+

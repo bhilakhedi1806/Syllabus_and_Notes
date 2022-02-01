@@ -1,0 +1,227 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">Python File Operations</div><br>
+        <div class="java-sub-contents">
+            <div class="list">
+                <div class="heading_inner">Python File Operations</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>Create</li>
+                        <li>Copy</li>
+                        <li>Move</li>
+                        <li>Rename</li>
+                    </ul>
+                </div>
+                <div class="heading_inner">Create a file</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>Python provides an&nbsp;<strong>open()</strong>function that accepts two arguments, file name and access mode in which the file is accessed.</li>
+                        <li>If a file exist as per given file name return that file otherwise create a new file.</li>
+                        <li>The function returns a file object which can be used to perform various operations like reading, writing, etc.</li>
+                        <li><strong>Syntax:</strong></li>
+                    </ul>
+                    <p>Variable_name&nbsp;=&nbsp;open(&lt;file-name&gt;,&nbsp;&lt;access-mode&gt;,&nbsp;&lt;buffering&gt;)</p>
+                </div>
+                <div class="table-compare">
+                    <table width="">
+                        <tbody>
+                            <tr>
+                            <th class="table heading">
+                                <p><span>SN</span></p>
+                            </th>
+                            <th class="table heading">
+                                <p><span>Access mode</span></p>
+                            </th>
+                            <th class="table heading">
+                                <p><span>Description</span></p>
+                            </th>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>1</p>
+                            </td>
+                            <td width="">
+                                <p>r</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to read-only mode. The file pointer exists at the beginning. The file is by default open in this mode if no access mode is passed.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>2</p>
+                            </td>
+                            <td width="">
+                                <p>rb</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to read-only in binary format. The file pointer exists at the beginning of the file.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>3</p>
+                            </td>
+                            <td width="">
+                                <p>r+</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to read and write both. The file pointer exists at the beginning of the file.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>4</p>
+                            </td>
+                            <td width="">
+                                <p>rb+</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to read and write both in binary format. The file pointer exists at the beginning of the file.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>5</p>
+                            </td>
+                            <td width="">
+                                <p>w</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to write only. It overwrites the file if previously exists or creates a new one if no file exists with the same name. The file pointer exists at the beginning of the file.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>6</p>
+                            </td>
+                            <td width="">
+                                <p>wb</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to write only in binary format. It overwrites the file if it exists previously or creates a new one if no file exists. The file pointer exists at the beginning of the file.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>7</p>
+                            </td>
+                            <td width="">
+                                <p>w+</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to write and read both. It is different from r+ in the sense that it overwrites the previous file if one exists whereas r+ doesn't overwrite the previously written file. It creates a new file if no file exists. The file pointer exists at the beginning of the file.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>8</p>
+                            </td>
+                            <td width="">
+                                <p>wb+</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file to write and read both in binary format. The file pointer exists at the beginning of the file.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>9</p>
+                            </td>
+                            <td width="">
+                                <p>a</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file in the append mode. The file pointer exists at the end of the previously written file if exists any. It creates a new file if no file exists with the same name.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>10</p>
+                            </td>
+                            <td width="">
+                                <p>ab</p>
+                            </td>
+                            <td width="">
+                                <p>It opens the file in the append mode in binary format. The pointer exists at the end of the previously written file. It creates a new file in binary format if no file exists with the same name.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>11</p>
+                            </td>
+                            <td width="">
+                                <p>a+</p>
+                            </td>
+                            <td width="">
+                                <p>It opens a file to append and read both. The file pointer remains at the end of the file if a file exists. It creates a new file if no file exists with the same name.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>12</p>
+                            </td>
+                            <td width="">
+                                <p>ab+</p>
+                            </td>
+                            <td width="">
+                                <p>It opens a file to append and read both in binary format. The file pointer remains at the end of the file.</p>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    #opens&nbsp;the&nbsp;file&nbsp;file.txt&nbsp;in&nbsp;read&nbsp;mode&nbsp;&nbsp;&nbsp;&nbsp;
+                    fileptr&nbsp;=&nbsp;open("file.txt","r")&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>if</strong>&nbsp;fileptr:&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>print</strong>("file&nbsp;is&nbsp;opened&nbsp;successfully")&nbsp;&nbsp;
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre> 
+                        <class '_io.TextIOWrapper'> file is opened successfully
+                </div>
+                <br/>
+                <div class="heading_inner">close() method</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>Once all the operations are done on the file, we must close it through our Python script using the&nbsp;<strong>close()</strong>method.</li>
+                        <li>Any unwritten information gets destroyed once the&nbsp;<strong>close()</strong>method is called on a file object.</li>
+                        <li>The syntax to use the&nbsp;<strong>close()</strong>method is given below.</li>
+                    </ul>
+                </div> 
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                   <pre>
+                    fileobject.close()&nbsp;&nbsp;&nbsp;
+                    Consider the following example.
+                    #&nbsp;opens&nbsp;the&nbsp;file&nbsp;file.txt&nbsp;in&nbsp;read&nbsp;mode&nbsp;&nbsp;&nbsp;&nbsp;
+                    fileptr&nbsp;=&nbsp;open("file.txt","r")&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>if</strong>&nbsp;fileptr:&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>print</strong>("file&nbsp;is&nbsp;opened&nbsp;successfully")&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    #closes&nbsp;the&nbsp;opened&nbsp;file&nbsp;&nbsp;&nbsp;&nbsp;
+                    fileptr.close()
+                    </pre>
+                </div>
+            <br/>
+
+            </div>
+        </div>
+    </div>
+</html>

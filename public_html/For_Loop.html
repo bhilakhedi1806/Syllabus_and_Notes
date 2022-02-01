@@ -1,0 +1,464 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+
+<div id="java-main">
+
+    <div class="heading">For Loop</div><br>
+    <div class="java-sub-contents">
+        <div class="list">
+
+            <div class="sub_list">
+                <ul>
+                    <li>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</li>
+                    <li>This is less like the for keyword in other programming languages.</li>
+                    <li>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</li>
+
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Example :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                    Print each fruit in a fruit list:
+                         fruits = ["apple", "banana", "cherry"]
+                         for x in fruits:
+                         print(x)</pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                        apple
+                        banana
+                        cherry </pre>
+                </div>
+                <p>NOTE: The for loop does not require an indexing variable to set beforehand.</p>
+            </div>
+            <div class="sub_list">
+                <ul>
+                    <li>Even strings are iterable objects, they contain a sequence of characters:</li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Example :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                    Loop through the letters in the word "banana":
+                         for x in "banana":
+                         print(x)</pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre> 
+                        b
+                        a
+                        n
+                        a
+                        n
+                        a
+                    </pre>
+                </div>
+            </div>
+            <div class="heading_inner">break Statement</div><br>
+            <div class="sub_list">
+                <ul>
+                    <li>With the break statement we can stop the loop before it has looped through all the items:</li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Example :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                    Exit the loop when x is "banana":
+                        fruits = ["apple", "banana", "cherry"]
+                        for x in fruits:
+                        print(x)
+                        if x == "banana":
+                        break
+                    </pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre> 
+                    apple banana </pre>
+                </div>
+            </div>
+            <div class="heading_inner">continue Statement</div><br>
+            <div class="sub_list">
+                <ul>
+                    <li>With the continue statement we can stop the current iteration of the loop, and continue with the next:</li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Example :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                    if x == "banana":
+                    continue
+                    print(x)
+                    </pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre> 
+                        apple
+                        cherry </pre>
+                </div>
+            </div>
+            <div class="heading_inner">range() Function</div><br>
+            <div class="sub_list">
+                <ul>
+                    <li>To loop through a set of code a specified number of times, we can use the range() function</li>
+                    <li>The range() function returns a sequence of numbers, starting from 0 by default, 
+                        and increments by 1 (by default), and ends at a specified number.</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Example :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                    Using the range() function:
+                        for x in range(6):					
+                        print(x)
+                    </pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre> 
+                        0
+                        1
+                        2
+                        3
+                        4
+                        5
+                    </pre>
+                    <p>Note: range(6) is the values 0 to 5</p> 
+                </div>
+                <div class="sub_list">
+                    <ul>
+                        <li>The range() function defaults to 0 as a starting value</li>
+                        <li>It is possible to specify the starting value by adding a parameter: range(2, 6), 
+                            which means values from 2 to 6 (but not including 6):</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Example :-</li>
+                    </ul>
+                    <div class="program_code">
+                        <pre>
+                    for x in range(2, 6):
+                    print(x)
+                        </pre>
+                    </div>  
+                    <ul>
+                        <li>Output :-</li>
+                    </ul>
+                    <div class="program_code">
+                        <pre>
+                            2
+                            3
+                            4
+                            5
+                        </pre>
+
+                    </div>
+                </div>
+                <div class="sub_list">
+                    <ul>
+                        <li>The range() function defaults to increment the sequence by 1, however it is possible to specify the 
+                            increment value by adding a third parameter: range(2, 30, 3):
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Example :-</li>
+                    </ul>
+                    <div class="program_code">
+                        <pre>
+                   Increment the sequence with 3 (default is 1):
+                        for x in range(2, 30, 3):
+                        print(x)
+
+                        </pre>
+                    </div>  
+                    <ul>
+                        <li>Output :-</li>
+                    </ul>
+                    <div class="program_code">
+                        <pre> 
+                            2
+                            5
+                            8
+                            11
+                            :
+                            :
+                            29
+
+                        </pre>
+
+                    </div>
+                </div>
+                <div class="heading_inner">Else in For Loop</div><br>
+                <div class="sub_list">
+                    <ul>
+                        <li>The else keyword in a for loop specifies a block of code to be executed when the loop is finished:</li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Example :-</li>
+                    </ul>
+                    <p>Print all numbers from 0 to 5, and print a message when the loop has ended:</p>
+                    <div class="program_code">
+                        <pre>
+                    for x in range(4):
+                       print(x)
+                       else:
+                       print("Finally finished!")
+                        </pre>
+                    </div>  
+                    <ul>
+                        <li>Output :-</li>
+                    </ul>
+                    <div class="program_code">
+                        <pre>  
+                            0
+                            1
+                            2
+                            3
+                            Finally finished!
+                        </pre>
+
+                    </div>
+                    <div class="heading_inner">Nested Loops</div><br>
+                    <div class="sub_list">
+                        <ul>
+                            <li>A nested loop is a loop inside a loop.</li>
+                            <li>The "inner loop" will be executed one time for each iteration of the "outer loop":</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Example :-</li>
+                        </ul>  <p>Print each adjective for every fruit:</p>
+                        <div class="program_code">
+                            <pre>
+                    adj = ["red", "big", "tasty"]
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in adj:
+                    for y in fruits:
+                    print(x, y)
+                            </pre>
+                        </div>  
+                        <ul>
+                            <li>Output :-</li>
+                        </ul>
+                        <div class="program_code">
+                            <pre>
+                                red	 apple<br>
+                                red 	 banana<br>
+                                red 	 cherry<br>
+                                big 	 apple<br>
+                                big 	 banana<br>
+                                big 	 cherry<br>
+                                tasty  apple<br>
+                                tasty  banana<br>
+                                tasty  cherry
+
+                            </pre>
+
+                        </div>
+                        <div class="heading_inner">Pass Statement</div><br>
+                        <div class="sub_list">
+                            <ul>
+                                <li>for loops cannot be empty, but if you for some reason have a for loop with no content, 
+                                    put in the pass statement to avoid getting an error.</li>
+
+                            </ul>
+
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Example :-</li>
+                            </ul>
+                            <div class="program_code">
+                                <pre>
+                    for x in [0, 1, 2]:
+                    pass
+                                </pre>
+                            </div>  
+                            <div class="heading_inner">while Loop</div><br>
+                            <div class="sub_list">
+                                <ul>
+                                    <li>The while loop we can execute a set of statements as long as a condition is true.</li>
+
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Example :-</li>
+                                </ul>          <p>Print i as long as i is less than 6:</p>
+                                <div class="program_code">
+                                    <pre>
+                    i = 1
+                    while i < 6:
+                    print(i)
+                    i +=1
+                                    </pre>
+                                </div>  
+                                <ul>
+                                    <li>Output :-</li>
+                                </ul>
+                                <div class="program_code">
+                                    <pre> 
+                                        1
+                                        2
+                                        3
+                                        4
+                                        5
+                                    </pre>
+                                    <p>Note: remember to increment i, or else the loop will continue forever.</p>
+                                </div>
+                                <div class="heading_inner">break Statement</div><br>
+                                <div class="sub_list">
+                                    <ul>
+                                        <li>The break statement we can stop the loop even if the while condition is true:</li>
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Example :-</li>
+                                    </ul>              <p>Exit the loop when i is 3:</p>
+                                    <div class="program_code">
+                                        <pre>
+                    i = 1
+                    while i < 6:
+                    print(i)
+                    if i == 3:
+                    break
+                    i += 1
+
+                                        </pre>
+                                    </div>  
+                                    <ul>
+                                        <li>Output :-</li>
+                                    </ul>
+                                    <div class="program_code">
+                                        <pre> 
+                                            1
+                                            2
+                                            3
+
+
+                                        </pre>
+
+                                    </div>
+                                    <div class="heading_inner">continue Statement</div><br>
+                                    <div class="sub_list">
+                                        <ul>
+                                            <li>The continue statement we can stop the current iteration, and continue with the next:</li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>Example :-</li>
+                                        </ul>                  <p>Continue to the next iteration if i is 3:</p>
+                                        <div class="program_code">
+                                            <pre>
+                   i = 0
+                   while i < 6:
+                   i += 1
+                   if i == 3:
+                   continue
+                   print(i)
+                                            </pre>
+                                        </div>  
+                                        <ul>
+                                            <li>Output :-</li>
+                                        </ul>
+                                        <div class="program_code">
+                                            <pre> 
+                                                1
+                                                2
+                                                4
+                                                5
+                                                6
+                                            </pre>
+
+                                        </div>
+                                        <div class="heading_inner">else Statement</div><br>
+                                        <div class="sub_list">
+                                            <ul>
+                                                <li>The else statement we can run a block of code once when the condition no longer is true:</li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>Example :-</li>
+                                            </ul>                      <p>Print a message once the condition is false:</p>
+                                            <div class="program_code">
+                                                <pre>
+                   i = 1
+                   while i < 6:
+                   print(i)
+                   i += 1
+                   else:
+                   print("i is no longer less than 6")
+                                                </pre>
+                                            </div>  
+                                            <ul>
+                                                <li>Output :-</li>
+                                            </ul>
+                                        <div class="program_code">
+                                            <pre>
+                                                1
+                                                2
+                                                4
+                                                5
+                                                i is no longer less than 6
+                                            </pre>
+
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

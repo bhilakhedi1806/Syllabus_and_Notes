@@ -1,0 +1,351 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+<div id="java-main">
+
+    <div class="heading">Python Tuple</div><br>
+    <div class="java-sub-contents">
+        <div class="list">
+           
+         <div class="heading_inner">Python Tuple</div><br>
+         <ul>
+             <li>A tuple is a collection which is ordered and&nbsp;<strong>unchangeable</strong>.</li>
+             <li>n Python tuples are written with round brackets.</li>
+         </ul>
+         <ul>
+                <li>Example</li>
+                <li>Create a Tuple:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            thistuple = ("apple", "banana", "cherry")
+            print(thistuple)
+                </pre>
+            </div>
+            <ul>
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            ['apple','banana','cherry']
+            <class 'list'>
+                </pre>
+            </div>
+             <br>
+            <div class="heading_inner">Indexing In Tuple</div><br>
+            <ul>
+                <li>Indexing in Tuple same as List/Array indexing like starting index is zero(0) and last index is (n-1), where n is length of the list or number of elements in the list.</li>
+                <li>Its also use negative indexing same like in List.</li>
+            </ul>
+            <div class="table-compare">
+
+                <table class="table-compare">
+                    <tbody>
+                        <tr>
+                        <td >
+                            <p>0</p>
+                        </td>
+                        <td >
+                            <p>1</p>
+                        </td>
+                        <td >
+                            <p>2</p>
+                        </td>
+                        <td >
+                            <p>3</p>
+                        </td>
+                        <td >
+                            <p>4</p>
+                        </td>
+                        <td >
+                            <p>5</p>
+                        </td>
+                        <td >
+                            <p>6</p>
+                        </td>
+                        <td >
+                            <p>7</p>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table-compare">
+                    <tbody>
+                        <tr>
+                        <td >
+                            <p><strong>&lsquo;A&rsquo;</strong></p>
+                        </td>
+                        <td >
+                            <p><strong>&lsquo;B&rsquo;</strong></p>
+                        </td>
+                        <td >
+                            <p><strong>&lsquo;C&rsquo;</strong></p>
+                        </td>
+                        <td >
+                            <p><strong>&lsquo;D&rsquo;</strong></p>
+                        </td>
+                        <td >
+                            <p><strong>&lsquo;E&rsquo;</strong></p>
+                        </td>
+                        <td >
+                            <p><strong>&lsquo;F&rsquo;</strong></p>
+                        </td>
+                        <td >
+                            <p><strong>&lsquo;G&rsquo;</strong></p>
+                        </td>
+                        <td >
+                            <p><strong>&lsquo;H&rsquo;</strong></p>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table-compare">
+                    <tbody>
+                        <tr>
+                        <td >
+                            <p>-8</p>
+                        </td>
+                        <td >
+                            <p>-7</p>
+                        </td>
+                        <td >
+                            <p>-6</p>
+                        </td>
+                        <td >
+                            <p>-5</p>
+                        </td>
+                        <td >
+                            <p>-4</p>
+                        </td>
+                        <td >
+                            <p>-3</p>
+                        </td>
+                        <td >
+                            <p>-2</p>
+                        </td>
+                        <td >
+                            <p>-1</p 
+                        </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+        <div>
+             <br>
+            <div class="heading_inner">Accessing Tuple Item</div><br>
+            <ul class="sub_list">
+                <li>You can access tuple items by referring to the index number, inside square brackets:</li>
+            </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>Print the second item of the Tuple:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                    thistuple = ["apple","banana","cherry"]
+                    print(thistuple[1])
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                    banana
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Print the last item of the Tuple:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                    thistuple = ["apple","banana","cherry"]
+                    print(thistuple[-1])      #negative Indexing
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                    cherry
+                </pre>
+            </div> 
+        </div>
+        </br>
+        <div class="heading_inner">Converting Tuple To List</div><br>
+        <ul class="sub_list">
+            <li>Once a tuple is created, you cannot change its values. Tuples are&nbsp;<strong>unchangeable.</strong></li>
+            <li>But You can convert the tuple into a list, change the list, and convert the list back into a tuple.</li>
+        </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>Convert the tuple into a list to be able to change it:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            x = ("apple", "banana", "cherry")
+            y = list(x)
+            y[1] = "kiwi"
+            x = tuple(y)
+            print(x)
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            ['apple','kiwi','cherry']
+            </pre>
+            </div>
+        </br>
+        <div class="heading_inner">Iterating Over Tuple</div><br>
+        <ul class="sub_list">
+            <li>Its also work same like in list.</li>
+        </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>Iterate through the items and print the values:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            thistuple = ("apple", "banana", "cherry")
+            for x in thistuple:
+            print(x)
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            apple
+            banana
+            cherry
+            </pre>
+            </div>
+        </br>
+        
+        <div class="heading_inner">Check if Item Exists</div><br>
+        <ul class="sub_list">
+            <li>To determine if a specified item is present in a tuple use the in keyword:</li>
+        </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>Check if "apple" is present in the tuple:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            thistuple = ("apple", "banana", "cherry")
+            if "apple" in thistuple:
+            print("Yes, 'apple' is in the fruits tuple")
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+            Yes, 'apple' is in the fruits tuple
+            </pre>
+            </div>
+        </br>
+        <div class="heading_inner">Tuple Length</div><br>
+        <ul class="sub_list">
+            <li>To determine how many items a tuple has, use the len() method:</li>
+        </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>Print the number of items in the tuple:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                thistuple = ("apple", "banana", "cherry")
+                print(len(thistuple))
+
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                3
+            </pre>
+            </div>
+         </br>
+         </br>
+        <div class="heading_inner">Join Two Tuples</div><br>
+        <ul class="sub_list">
+            <li>To join two or more tuples you can use the + operator:</li>
+        </ul>
+            <ul class="sub_list">
+                <li>Example</li>
+                <li>Join Two tuple:</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+                tuple1 = ("a", "b" , "c")
+                tuple2 = (1, 2, 3)
+
+                tuple3 = tuple1 + tuple2 
+    `           print(tuple3)
+
+                </pre>
+            </div>
+            <ul class="sub_list">
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>
+               ('a', 'b', 'c', 1, 2, 3)
+
+            </pre>
+            </div>
+        </br>
+        <div class="heading_inner">Tuple Methods</div><br>
+        <ul class="sub_list">
+            <li>Python has two built-in methods that you can use on tuples.</li>
+        </ul>
+           
+               
+                <ul class="table-compare">
+                    <li>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                <td width="">
+                                    <p>Method</p>
+                                </td>
+                                <td width="">
+                                    <p>Description</p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="">
+                                    <p><a href="https://www.w3schools.com/python/ref_tuple_count.asp">count()</a></p>
+                                </td>
+                                <td width="">
+                                    <p>Returns the number of times a specified value occurs in a tuple</p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="">
+                                    <p><a href="https://www.w3schools.com/python/ref_tuple_index.asp">index()</a></p>
+                                </td>
+                                <td width="">
+                                    <p>Searches the tuple for a specified value and returns the position of where it was found</p>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+        
+        </div>
+    </div>
+</div>
+</html>

@@ -1,0 +1,98 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+
+<div id="java-main">
+    <div class="heading"><b>Python Variable Scope</b> </div>
+    <div class="java-sub-contents">
+        <div class="list">
+            <ul>
+                <li>In Python Code, these are various unique namespaces defined, we may not be able to access all of them from every part of the program.</li>
+                <li>The concept of scope comes into play.</li>
+                <li>A scope is the portion of a program from where a namespace can be accessed directly without any prefix.</li>
+            </ul>
+            <ul>
+                <li>At any given moment, there are at least three Variable scopes.</li>
+                <div class="sub_list">
+                    <li>local namespace</li>
+                    <li>global namespace</li>
+                    <li>built-in namespace</li>
+                </div>
+                <li>When a reference is made inside a function, the name is searched in the local namespace, then in the global namespace and finally in the built-in namespace.</li>
+                <li>If there is a function inside another function, a new scope is nested inside the local scope.</li>
+            </ul>
+            <ul>
+                <li><strong>Example of Scope and Namespace in Python</strong></li>
+            </ul>
+            <div class="program_code">
+                <p>def outer_function():</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = 20&nbsp;&nbsp;</p>
+                <p>&nbsp; &nbsp;print(&ldquo;b:=&ldquo;,b)</p>
+                <p>a = 10</p>
+                <p>outer_function()</p>
+                <p>print(&ldquo;a:=&ldquo;,a)</p>
+            </div>
+            <ul><li>OUTPUT:</li></ul>
+            <div class="program_code">
+                <p>b:=20</p>
+                <p>a:=10</p>
+            </div>
+            <ul>
+                <li>Here, the variable&nbsp;<em>a</em>is in the global namespace. Variable&nbsp;<em>b</em>is in the local namespace of&nbsp;outer_function()&nbsp;</li>
+            </ul>
+            <ul>
+                <li><strong>Example of Scope and Namespace in Python</strong></li>
+            </ul>
+            <div class="program_code">
+                <p>def outer_function():</p>
+                <p>&nbsp;&nbsp;&nbsp; a = 20&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp; def inner_function():</p>
+                <p>&nbsp;&nbsp; &nbsp; &nbsp;a = 30</p>
+                <p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('a =', a)</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp; inner_function()&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp; print('a =', a)</p>
+                <p>a = 10</p>
+                <p>outer_function()</p>
+                <p>print('a =', a)</p>
+            </div>
+            <ul><li>OUTPUT:</li></ul>
+            <div class="program_code">
+                <p>a:=30</p>
+                <p>a:=20</p>
+                <p>a:=10</p>
+            </div>
+            <ul>
+                <li>Three different variables&nbsp;<em>a</em> are defined in separate namespaces and accessed accordingly.</li>
+            </ul>
+            <ul>
+                <li><strong>Example of Scope and Namespace in Python</strong></li>
+            </ul>
+            <div class="program_code">
+                <p>def outer_function():</p>
+                <p>&nbsp;&nbsp;&nbsp; global a</p>
+                <p>&nbsp;&nbsp;&nbsp; a = 20&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp; def inner_function():</p>
+                <p>&nbsp; &nbsp;global a</p>
+                <p>&nbsp;&nbsp; &nbsp; &nbsp;a = 30</p>
+                <p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('a =', a)</p>
+                <p>&nbsp;&nbsp;&nbsp; inner_function()&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp; print('a =', a)</p>
+                <p>a = 10</p>
+                <p>outer_function()</p>
+                <p>print('a =', a)</p>
+            </div>
+            <ul><li>OUTPUT:</li></ul>
+            <div class="program_code">
+                <p>a:=30</p>
+                <p>a:=30</p>
+                <p>a:=30</p>
+            </div>
+            <div>
+                <p>Here, all references and assignments are to the global&nbsp;<em>a</em>&nbsp;due to the use of keyword&nbsp;global</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>

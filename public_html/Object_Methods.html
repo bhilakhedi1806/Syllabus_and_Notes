@@ -1,0 +1,110 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">Object Methods</div><br>
+        <div class="java-sub-contents">
+
+            <div class="list">
+
+                <div class="heading_inner">Object Methods</div><br>    
+                <ul>
+                    <li>Objects can also contain methods.</li>
+                    <li>Methods in objects are functions that belong to the object.</li>
+                    <li>Let us create a method in the Person class:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Insert a function that prints a greeting, and execute it on the p1 object:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        class Person:
+                            def __init__(self, name, age):
+                                self.name = name
+                                self.age = age
+                            def myfunc(self):
+                                print("Hello my name is " + self.name)
+                        p1 = Person("John", 36)
+                        p1.myfunc()
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">The Self Parameter</div><br>
+                <ul>
+                    <li>The&nbsp;selfparameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.</li>
+                    <li>It does not have to be named&nbsp;self, you can call it whatever you like, but it has to be the first parameter of any function in the class:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Use the words&nbsp;<em>mysillyobject</em>and&nbsp;<em>abc</em>instead of&nbsp;<em>self</em>:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        class Person:
+                            def __init__(mysillyobject, name, age):
+                            mysillyobject.name = name
+                            mysillyobject.age = age
+                        def myfunc(abc):
+                            print("Hello my name is " + abc.name)
+                        p1 = Person("John", 36)
+                        p1.myfunc()
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Modify Delete Object Properties</div><br>
+                <ul>
+                    <li>You can modify properties on objects like this:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Set the age of p1 to 40:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        p1.age = 40
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>You can delete properties on objects by using the&nbsp;delkeyword:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Delete the age property from the p1 object:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        del p1.age
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">Delete Objects and pass Statement</div><br>
+                <ul>
+                    <li>You can delete objects by using the&nbsp;delkeyword:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Delete the p1 object:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        del p1
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>class definitions cannot be empty, but if you for some reason have a&nbsp;classdefinition with no content, put in the&nbsp;pass&nbsp;statement to avoid getting an error.</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    class Person:
+                        pass
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

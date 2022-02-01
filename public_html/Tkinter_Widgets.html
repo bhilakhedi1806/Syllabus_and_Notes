@@ -1,0 +1,476 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">tkinter Widgets</div><br>
+        <div class="java-sub-contents">
+            <div class="list">
+                <li>There are various widgets like button, Label, Entry, Text, Canvas, Frames etc. that are used to build the python GUI applications.</li>
+                <br/>
+                <div class="heading_inner">Python tkinter Button</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>The button widget is used to add various types of buttons to the python application.</li>
+                        <li>Python allows us to configure the look of the button according to our requirements.</li>
+                        <li>Various options can be set or reset depending upon the requirements.</li>
+                        <li>We can also associate a method or function with a button which is called when the button is pressed.</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>The syntax to use the button widget is given below.</li>
+                    W&nbsp;=&nbsp;Button(parent,&nbsp;options)&nbsp;</li>
+                </ul>
+                <br/>
+                <div class="table-compare">
+                    <table width="">
+                        <tbody>
+                            <tr>
+                            <td width="">
+                                <p>SN</p>
+                            </td>
+                            <td width="">
+                                <p>Option</p>
+                            </td>
+                            <td width="">
+                                <p>Description</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>1</p>
+                            </td>
+                            <td width="">
+                                <p>activebackground</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the background of the button when the mouse hover the button.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>2</p>
+                            </td>
+                            <td width="">
+                                <p>activeforeground</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the font color of the button when the mouse hover the button.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>3</p>
+                            </td>
+                            <td width="">
+                                <p>bd</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the border width in pixels.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>4</p>
+                            </td>
+                            <td width="">
+                                <p>bg</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the background color of the button.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>5</p>
+                            </td>
+                            <td width="">
+                                <p>Command</p>
+                            </td>
+                            <td width="">
+                                <p>It is set to the function call which is scheduled when the function is called.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>6</p>
+                            </td>
+                            <td width="">
+                                <p>fg</p>
+                            </td>
+                            <td width="">
+                                <p>Foreground color of the button.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>7</p>
+                            </td>
+                            <td width="">
+                                <p>Font</p>
+                            </td>
+                            <td width="">
+                                <p>The font of the button text.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>8</p>
+                            </td>
+                            <td width="">
+                                <p>Height</p>
+                            </td>
+                            <td width="">
+                                <p>The height of the button. The height is represented in the number of text lines for the textual lines or the number of pixels for the images.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>10</p>
+                            </td>
+                            <td width="">
+                                <p>Highlightcolor</p>
+                            </td>
+                            <td width="">
+                                <p>The color of the highlight when the button has the focus.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>11</p>
+                            </td>
+                            <td width="">
+                                <p>Image</p>
+                            </td>
+                            <td width="">
+                                <p>It is set to the image displayed on the button.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>12</p>
+                            </td>
+                            <td width="">
+                                <p>justify</p>
+                            </td>
+                            <td width="">
+                                <p>It illustrates the way by which the multiple text lines are represented. It is set to LEFT for left justification, RIGHT for the right justification, and CENTER for the center.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>13</p>
+                            </td>
+                            <td width="">
+                                <p>Padx</p>
+                            </td>
+                            <td width="">
+                                <p>Additional padding to the button in the horizontal direction.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>14</p>
+                            </td>
+                            <td width="">
+                                <p>pady</p>
+                            </td>
+                            <td width="">
+                                <p>Additional padding to the button in the vertical direction.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>15</p>
+                            </td>
+                            <td width="">
+                                <p>Relief</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the type of the border. It can be SUNKEN, RAISED, GROOVE, and RIDGE.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>17</p>
+                            </td>
+                            <td width="">
+                                <p>State</p>
+                            </td>
+                            <td width="">
+                                <p>This option is set to DISABLED to make the button unresponsive. The ACTIVE represents the active state of the button.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>18</p>
+                            </td>
+                            <td width="">
+                                <p>Underline</p>
+                            </td>
+                            <td width="">
+                                <p>Set this option to make the button text underlined.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>19</p>
+                            </td>
+                            <td width="">
+                                <p>Width</p>
+                            </td>
+                            <td width="">
+                                <p>The width of the button. It exists as a number of letters for textual buttons or pixels for image buttons.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>20</p>
+                            </td>
+                            <td width="">
+                                <p>Wraplength</p>
+                            </td>
+                            <td width="">
+                                <p>If the value is set to a positive number, the text lines will be wrapped to fit within this length.</p>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    from tkinter import *
+                    top = Tk()
+                    top.geometry("200x100")
+                    b = Button(top,text = "Simple")
+                    b.pack()
+                    top.mainaloop()S
+                    </pre>
+                </div>
+                <br/>
+                <div class="image_features">
+                    <img src="C:/Users/lenovo/Desktop/New folder (3)/Python/public_html/img/simple_button.png" alt="Simple Button">
+                </div>
+                <br/>
+                <div class="heading_inner">Python tkinter Canvas</div><br>    
+                <div class="list">
+                    <ul>
+                        <li>The canvas widget is used to add the structured graphics to the python application.</li>
+                        <li>It is used to draw the graph and plots to the python application.</li>
+                        <li>The syntax to use the canvas is given below.</li>
+                        <li>Syntax</li>
+                        <p>w&nbsp;=&nbsp;canvas(parent,&nbsp;options)&nbsp;&nbsp;</p></ul>
+                </div>    
+                <div class="table-compare">
+                    <p>&nbsp;</p>
+                    <table width="">
+                        <tbody>
+                            <tr>
+                            <td width="">
+                                <p>SN</p>
+                            </td>
+                            <td width="">
+                                <p>Option</p>
+                            </td>
+                            <td width="">
+                                <p>Description</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>1</p>
+                            </td>
+                            <td width="">
+                                <p>bd</p>
+                            </td>
+                            <td width="">
+                                <p>The represents the border width. The default width is 2.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>2</p>
+                            </td>
+                            <td width="">
+                                <p>bg</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the background color of the canvas.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>3</p>
+                            </td>
+                            <td width="">
+                                <p>confine</p>
+                            </td>
+                            <td width="">
+                                <p>It is set to make the canvas unscrollable outside the scroll region.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>4</p>
+                            </td>
+                            <td width="">
+                                <p>cursor</p>
+                            </td>
+                            <td width="">
+                                <p>The cursor is used as the arrow, circle, dot, etc. on the canvas.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>5</p>
+                            </td>
+                            <td width="">
+                                <p>height</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the size of the canvas in the vertical direction.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>6</p>
+                            </td>
+                            <td width="">
+                                <p>highlightcolor</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the highlight color when the widget is focused.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>7</p>
+                            </td>
+                            <td width="">
+                                <p>relief</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the type of the border. The possible values are SUNKEN, RAISED, GROOVE, and RIDGE.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>8</p>
+                            </td>
+                            <td width="">
+                                <p>scrollregion</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the coordinates specified as the tuple containing the area of the canvas.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>9</p>
+                            </td>
+                            <td width="">
+                                <p>width</p>
+                            </td>
+                            <td width="">
+                                <p>It represents the width of the canvas.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>10</p>
+                            </td>
+                            <td width="">
+                                <p>xscrollincrement</p>
+                            </td>
+                            <td width="">
+                                <p>If it is set to a positive value. The canvas is placed only to the multiple of this value.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>11</p>
+                            </td>
+                            <td width="">
+                                <p>xscrollcommand</p>
+                            </td>
+                            <td width="">
+                                <p>If the canvas is scrollable, this attribute should be the .set() method of the horizontal scrollbar.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>12</p>
+                            </td>
+                            <td width="">
+                                <p>yscrollincrement</p>
+                            </td>
+                            <td width="">
+                                <p>Works like xscrollincrement, but governs vertical movement.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td width="">
+                                <p>13</p>
+                            </td>
+                            <td width="">
+                                <p>yscrollcommand</p>
+                            </td>
+                            <td width="">
+                                <p>If the canvas is scrollable, this attribute should be the .set() method of the vertical scrollbar.</p>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub_list">
+                    <li>Example</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    from tkinter import *
+                    top = Tk()
+                    top.geometry("200x100")
+                    #creating a simple canvas
+                    c = Canvas(top,bg = "pink",height = "200")
+                    c.pack()
+                    top.mainloop()
+                    </pre>
+                </div>
+                <br/>
+                <div class="image_features">
+                    <img src="C:/Users/lenovo/Desktop/New folder (3)/Python/public_html/img/simple_canvas.png" alt="Simple canvas">
+                </div>
+                <br/>
+                <div class="sub_list">
+                    <li>Example :  Creating an arc</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                    from tkinter import *
+                    top = Tk()
+                    top.geometry("200x100")
+                    #creating a simple canvas
+                    c = Canvas(top,bg = "pink",height = "200".width = "200")
+                    arc = c.create_arc((5,10,150,200),start = 0,extent = 150, fill= "white")
+                    c.pack()
+                    top.mainloop()
+                    </pre>
+                </div>
+                <br/>
+                <div class="image_features">
+                    <img src="C:/Users/lenovo/Desktop/New folder (3)/Python/public_html/img/simple_arc.png" alt="Simple arc">
+                </div>
+                <br/>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</html>

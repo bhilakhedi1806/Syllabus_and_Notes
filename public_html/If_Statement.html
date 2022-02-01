@@ -1,0 +1,249 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+
+<div id="java-main">
+
+    <div class="heading"><b>if statement</b></div><br>
+    <div class="java-sub-contents">
+        <div class="list">
+            <div class="heading_inner">Python Conditional Statements :- </div>
+            <ul>
+                <li>Python supports the usual condition:</li>
+            </ul>
+            <div class="sub_list">
+                <ul>
+                    <li>Equals: a == b </li>
+                    <li>Not Equals: a != b</li>
+                    <li>Less than: a < b</li>
+                    <li>Less than or equal to: a <= b</li>
+                    <li>Greater than: a > b</li>
+                    <li>Greater than or equal to: a >= b</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="list">
+            <div class="heading_inner">if statement</div><br>
+            <ul>
+                <li>An "if statement" is written by using the if keyword.</li>
+            </ul>
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+
+                <div class="program_code">
+                    <pre>
+                    a = 10
+                    b = 20
+                    if b > a:
+                    print("b is greater than a")</pre>
+                </div> 
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre> B is greater then a </pre>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="heading_inner">Elif statement</div><br>
+            <ul>
+                <li>The elif keyword is pythons way of saying</li> 
+                <li>"if the previous conditions were not true, then try this condition"</li>
+            </ul>
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+
+                <div class="program_code">
+                    <pre>
+                    a = 10
+                    b = 10
+                    if b > a:
+                    print("b is greater than a")
+                    elif a == b:
+                    print("a and b are equal")</pre>
+                </div> 
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>a and b are equal</pre>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="heading_inner">Else</div><br>
+            <ul>
+                <li>The else keyword catches anything which isn't caught by the preceding conditions.</li> 
+
+            </ul>
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+
+                <div class="program_code">
+                    <pre>
+
+                     a = 10
+                     b = 20
+                     if b > a:
+                     print("b is greater than a")
+                     elif a == b:
+                     print("a and b are equal")
+                     else:
+                     print("a is greater than b")</pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>b is greater than a</pre>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+
+            <ul>
+                <li>If you have only one statement to execute, you can put it on the same line as the if statement.</li> 
+
+            </ul>
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+
+                <div class="program_code">
+                    <pre>
+                     a = 2
+                     b = 1
+                     if a > b: print("a is greater than b")</pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>a is greater than b</pre>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+
+                <div class="program_code">
+                    <pre>
+                     a = 2
+                     b = 3
+                     print("A") if a > b else print("B")</pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>B</pre>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+
+                <div class="program_code">
+                    <pre>
+                     a = 10
+                     b = 10
+                     print("A") if a > b else print("=")
+                                if a == b else print("B")</pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>=</pre>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <div class="list">
+                <ul>
+                    <li>Logical 'and' & 'or' operator use to combined more then one conditional statement.</li> 
+                </ul>
+
+        </ul>
+        <div class="sub_list">
+            <ul>
+                <li> Example :-</li>
+            </ul>
+
+            <div class="program_code">
+                <pre>
+                     Test if a is greater than b, AND if c is greater than a:
+                        a = 3
+                        b = 2
+                        c = 4
+                        if a > b and c > a:
+                        print("Both conditions are True")</pre>
+            </div>  
+            <ul>
+                <li>Output :-</li>
+            </ul>
+            <div class="program_code">
+                <pre>Both conditions are True</pre>
+            </div>
+        </div>
+        <div class="list">
+            <div class="heading_inner">Nested If</div><br>
+            <ul>
+                <li>You can have if statements inside if statements, this is called nested if statements.</li> 
+            </ul>
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>
+                     x = 41
+                     if x > 10:
+                     print("Above ten,")
+                     if x > 20:
+                     print("and also above 20!")
+                     else:
+                     print("but not above 20.")</pre>
+                </div>  
+                <ul>
+                    <li>Output :-</li>
+                </ul>
+                <div class="program_code">
+                    <pre>Above ten,and also above 20!</pre>
+                </div>
+            </div>
+        <div class="list">
+            <div class="heading_inner">Pass Statement</div><br>
+            <ul>
+                <li>if statements cannot be empty, but if you for some reason have an if statement with no content</li> 
+                <li>Then put in the pass statement to avoid getting an error.</li>
+            </ul>
+
+            <div>
+                <ul>
+                    <li> Example :-</li>
+                </ul>
+
+                <div class="program_code">
+                    <pre>
+                     a = 33
+                     b = 200
+                     if b > a:
+                     pass</pre>
+                </div>  
+            </div>     
+        </div>
+        </div>
+    </div>
+</div>
+
+

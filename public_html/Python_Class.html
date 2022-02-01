@@ -1,0 +1,73 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+<html>
+    <div id="java-main">
+
+        <div class="heading">Python Class</div><br>
+        <div class="java-sub-contents">
+            <div class="list">
+
+                <div class="heading_inner">Python Class</div><br>
+                <ul>
+                    <li>Python is an object oriented programming language.</li>
+                    <li>Almost everything in Python is an object, with its properties and methods.</li>
+                    <li>A Class is like an object constructor, or a "blueprint" for creating objects.</li>
+                </ul>
+                <br/>
+                <ul>
+                    <li>Create a Class</li>
+                    <li>To create a class, use the keyword&nbsp;class:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Create a class named MyClass, with a property named x:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        class MyClass:
+                            x = 5
+                    </pre>
+                </div>
+                <br/>
+                <ul>
+                    <li>Create a Object</li>
+                    <li>Now we can use the class named MyClass to create objects:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Create an object named p1, and print the value of x:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        p1 = MyClass()
+                            print(p1.x)
+                    </pre>
+                </div>
+                <br/>
+                <div class="heading_inner">The __init__() Function</div><br>
+                <ul>
+                    <li>To understand the meaning of classes we have to understand the built-in __init__() function.</li>
+                    <li>All classes have a function called __init__(), which is always executed when the class is being initiated.</li>
+                    <li>Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created:</li>
+                </ul>
+                <div class="sub_list">
+                    <li>Example</li>
+                    <li>Create a class named Person, use the __init__() function to assign values for name and age:</li>
+                </div>
+                <div class="program_code">
+                    <pre>
+                        class Person:
+                            def __init__(self, name, age):
+                            self.name = name
+                            self.age = age
+                        p1 = Person("John", 36)
+                        print(p1.name)
+                        print(p1.age)
+                    </pre>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</html>

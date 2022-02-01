@@ -1,0 +1,85 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+
+<div id="java-main">
+    <div class="heading"><b>Module</b> </div>
+    <div class="java-sub-contents">
+        <div class="list">
+            <div class="heading_inner">Concept of modules in python</div>
+            <br>
+            <ul>
+                <li>A module is a file consisting of Python code.</li>
+                <li>A module can define functions, classes and variables.</li>
+                <li>A module can also include runnable code.</li>
+                <li></li>
+                <li>Consider a module to be the same as a code library.</li>
+                <li>A file containing a set of functions you want to include in your application.</li>
+            </ul>
+
+            <br>
+            <div class="heading_inner">Create a Module</div>
+            <br>
+            <ul>
+                <li>To create a module just save the code you want in a file with the file extension</li>
+                <div class="program_code">
+                    <pre>&nbsp;.py:</pre>
+                </div>
+            </ul>
+            <ul>
+                <li>Example</li>
+                <div class="sub_list">
+                    <ul>
+                        <li>Save this code in a file named&nbsp;mymodule.py</li>
+                        <div class="program_code">
+                            <pre>   defmessage(name):<br /> &nbsp;&nbsp;print(&ldquo;Welcome to, "+ name)</pre>
+                        </div>
+                    </ul>
+                </div>
+            </ul>
+            <br>
+            <div class="heading_inner">Use Modules</div>
+            <br>
+            <ul>
+                <li>Now we can use the module we just created, by using the&nbsp;importstatement:</li>
+                <li><b>Example</b></li>
+            </ul>
+            <div class="sub_list">
+                <ul>
+                    <li>Import the module named mymodule, and call the greeting function:</li>
+                    <div class="program_code">
+                        <pre> importmymodule<br /> <br /> mymodule.message(&ldquo;Python")</pre>
+                    </div>
+                </ul>
+                <ul>
+                    <li><b>Note: When call a function from a module, use the syntax: module_file_name.function_name.</b></li>    
+                </ul>    
+            </div>
+            <br>
+            <div class="heading_inner">Re-naming a Module</div>
+            <br>
+            <ul>
+                <li>You can create an alias when you import a module, by using the&nbsp;askeyword:</li>
+                <li><b>Example</b></li>
+                <div class="sub_list">
+                    <li>Create an alias for&nbsp;mymodulecalled&nbsp;mx:</li>
+                </div>    
+            </ul>
+            <div class="program_code">
+                <pre>import&nbsp;mymodule&nbsp;as&nbsp;mx<br /> <br /> <br /> mymodule.message(&ldquo;Python")</pre>
+            </div>
+            <br>
+            <div class="heading_inner">Built-in Modules</div>
+            <br>
+            <ul>
+                <li>There are several built-in modules in Python, which you can import whenever you like.</li>
+                <li><b>Example</b></li>
+            </ul>
+            <div class="program_code">
+                <pre>Import and use the&nbsp;platform&nbsp;module:</pre>
+                <pre>import&nbsp;platform<br /> <br /> x = platform.system()<br /> print(x)</pre>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>        

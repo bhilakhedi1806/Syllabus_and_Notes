@@ -1,0 +1,99 @@
+<link href="css/cssfile.css" type="text/css" rel="stylesheet"/>
+
+<div id="java-main">
+    <div class="heading"><b>Python Namespace</b> </div>
+    <div class="java-sub-contents">
+        <div class="list">
+            <ul>
+                <li>Name????</li></ul>
+            <div class="sub_list">
+                <ul>
+                    <li>Name (also called identifier) is simply a name given to objects. Everything in Python is an&nbsp;<a href="https://www.programiz.com/python-programming/class">object</a>.</li>
+                    <li>Name is a way to access the existing object.</li>
+                </ul>
+            </div>
+            <ul>
+                <li>For example,</li>
+            </ul>
+            <div class="sub_list">
+                <ul>
+                    <li>a=2, 2&nbsp;is an object stored in memory and a&nbsp;is the name associate it.</li>
+                    <li>We can get the address (in RAM) of some object through the&nbsp;<a href="https://www.programiz.com/python-programming/built-in-function">built-in function</a> id().</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Example:</li>
+            </ul>
+            <div class="program_code">
+                <pre>a = 2</pre>
+                <pre>print('id(2) =', id(2))</pre>
+                <pre>print('id(a) =', id(a))</pre>
+            </div>
+            <ul>
+                <li>Output</li>
+            </ul>
+            <div class="program_code">
+                <pre>id(2) = 9302208</pre>
+                <pre>id(a) = 9302208</pre>
+                <pre>Here, both refer to the same object 2, so they have the same id().</pre>
+            </div>
+            <ul>
+                <li>Example:</li>
+            </ul>
+            <div class="program_code">
+                <pre>a = 2</pre>
+                <pre>print('id(a) =', id(a))</pre>
+                <pre>a = a+1</pre>
+                <pre>print('id(a) =', id(a))</pre>
+                <pre>print('id(3) =', id(3))</pre>
+                <pre>b = 2</pre>
+                <pre>print('id(b) =', id(b))</pre>
+                <pre>print('id(2) =', id(2))</pre>
+            </div>
+            <ul><li>Output</li></ul>
+            <div class="program_code">
+                <pre>id(a) = 9302208</pre>
+                <pre>id(a) = 9302240</pre>
+                <pre>id(3) = 9302240</pre>
+                <pre>id(b) = 9302208</pre>
+                <pre>id(2) = 9302208</pre>
+            </div>
+            <ul>
+                <li>Initially, an object 2&nbsp;is created and the name a&nbsp;is associated with it, when we do a=a+1, a new object 3 is created and now a is associated with this object.</li>
+            </ul>
+            <div>
+                <ul class="sub_list">
+                    <li>Note that id(a) and id(3)&nbsp;have the same values.</li></ul>
+            </div>
+            <ul>
+                <li>Furthermore, when b=2 is executed, the new name b gets associated with the previous object 2.</li>
+            </ul>
+            <div>
+                <ul class="sub_list" >
+                    <li>This is efficient as Python does not have to create a new duplicate object.</li>
+                    <li>This dynamic nature of name binding makes Python powerful</li>
+                </ul></div>
+            <br>
+            <div class="heading_inner">Namespace</div>
+            <br>
+            <ul>
+                <li>A namespace is a collection of names.</li>
+                <li>A namespace is a system to have a unique name for each and every object in Python.</li>
+                <li>An object might be a variable or a method or a class.</li>
+                <li>Python itself maintains a namespace in the form of a Python dictionary.</li>
+                <div class="sub_list">
+                    <li>Real-time example</li>
+                    <li>The role of a namespace is like a surname.</li>
+                    <li>One might not find a single &ldquo;Chouhan&rdquo; in the class there might be multiple &ldquo;Chouhan&rdquo; but when you particularly ask for &ldquo;Sachin Chouhan&rdquo; or &ldquo;Deepak Chouhan&rdquo; (with a surname), there will be only one.</li>
+                </div>
+            </ul>
+            <ul>
+                <li>Python interpreter understands what exact method or variable one is trying to point to in the code, depending upon the namespace.</li>
+                <li>So, the division of the word itself gives little more information. Its&nbsp;<strong>Name</strong>(which means name, an unique identifier) +&nbsp;<strong>Space</strong>(which talks something related to scope).</li>
+                <li>Here, a name might be of any Python method or variable and space depends upon the location from where is trying to access a variable or a method.</li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>  
